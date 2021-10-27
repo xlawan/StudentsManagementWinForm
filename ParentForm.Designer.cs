@@ -38,8 +38,8 @@ namespace StudentsManagementWinForm
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,6 +67,7 @@ namespace StudentsManagementWinForm
             // 
             this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonHome.FlatAppearance.BorderSize = 0;
+            this.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHome.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonHome.Location = new System.Drawing.Point(0, 280);
@@ -83,6 +84,7 @@ namespace StudentsManagementWinForm
             // 
             this.buttonAboutUs.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAboutUs.FlatAppearance.BorderSize = 0;
+            this.buttonAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAboutUs.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonAboutUs.Location = new System.Drawing.Point(0, 235);
@@ -99,6 +101,7 @@ namespace StudentsManagementWinForm
             // 
             this.buttonComputationDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonComputationDetails.FlatAppearance.BorderSize = 0;
+            this.buttonComputationDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonComputationDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComputationDetails.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonComputationDetails.Location = new System.Drawing.Point(0, 190);
@@ -115,6 +118,7 @@ namespace StudentsManagementWinForm
             // 
             this.buttonCheckDatabase.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonCheckDatabase.FlatAppearance.BorderSize = 0;
+            this.buttonCheckDatabase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonCheckDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCheckDatabase.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonCheckDatabase.Location = new System.Drawing.Point(0, 145);
@@ -131,6 +135,7 @@ namespace StudentsManagementWinForm
             // 
             this.buttonComputeGrades.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonComputeGrades.FlatAppearance.BorderSize = 0;
+            this.buttonComputeGrades.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonComputeGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComputeGrades.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonComputeGrades.Location = new System.Drawing.Point(0, 100);
@@ -174,17 +179,6 @@ namespace StudentsManagementWinForm
             this.panelChildForm.Size = new System.Drawing.Size(928, 644);
             this.panelChildForm.TabIndex = 1;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Image = global::StudentsManagementWinForm.Properties.Resources.GroupIcon1;
-            this.pictureBox2.Location = new System.Drawing.Point(324, 100);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -196,6 +190,17 @@ namespace StudentsManagementWinForm
             this.label1.Size = new System.Drawing.Size(568, 92);
             this.label1.TabIndex = 1;
             this.label1.Text = "THIS IS WANNABETECHIES\r\n          WINFORM APP";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::StudentsManagementWinForm.Properties.Resources.GroupIcon1;
+            this.pictureBox2.Location = new System.Drawing.Point(324, 100);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // ParentForm
             // 

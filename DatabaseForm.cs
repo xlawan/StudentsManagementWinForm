@@ -24,11 +24,13 @@ namespace StudentsManagementWinForm
             viewData();
         }
 
-        
+
         //method to display automatically the recent changes in the Database
+        //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True
         void viewData()
         {
-            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
             con.Open();
             cmd = new SqlCommand("Select * from Students");
             cmd.Connection = con;
@@ -44,7 +46,8 @@ namespace StudentsManagementWinForm
             //conditional statement to select IdNo to be searched
             if (comboBox1.Text == "ID No")
             {
-                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
                 con.Open();
                 cmd = new SqlCommand("Select * from Students where IdNo like '%' + '" + textBoxSearch.Text + "' + '%' ");
                 cmd.Connection = con;
@@ -57,7 +60,8 @@ namespace StudentsManagementWinForm
             //conditional statement to select Lastname to be searched
             else if (comboBox1.Text == "Last Name")
             {
-                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
                 con.Open();
                 cmd = new SqlCommand("Select * from Students where LastName like '%' + '" + textBoxSearch.Text + "' + '%' ");
                 cmd.Connection = con;
@@ -70,7 +74,8 @@ namespace StudentsManagementWinForm
             //conditional statement to select FirstName to be searched
             else if (comboBox1.Text == "First Name")
             {
-                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
                 con.Open();
                 cmd = new SqlCommand("Select * from Students where FirstName like '%' + '" + textBoxSearch.Text + "' + '%' ");
                 cmd.Connection = con;
@@ -83,7 +88,8 @@ namespace StudentsManagementWinForm
             //conditional statement to select Course to be searched
             else if (comboBox1.Text == "Course")
             {
-                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
                 con.Open();
                 cmd = new SqlCommand("Select * from Students where Course like '%' + '" + textBoxSearch.Text + "' + '%' ");
                 cmd.Connection = con;
@@ -107,7 +113,8 @@ namespace StudentsManagementWinForm
         //Button to insert data in the Database
         private void buttonInsertData_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            //con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
             con.Open();
             cmd = new SqlCommand("Insert Into Students values (@IdNo,@LastName,@FirstName,@Course,@Score,@OverallScore)");
             cmd.Connection = con;
