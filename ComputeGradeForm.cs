@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentsManagementWinForm
 {
-    public partial class Form1 : Form
+    public partial class ComputeGradeForm : Form
     {
-        public Form1()
+        public ComputeGradeForm()
         {
             InitializeComponent();
         }
@@ -26,7 +26,6 @@ namespace StudentsManagementWinForm
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
             // computation starts here
-            // int grade = int.Parse(textBox4.Text);
             double score = double.Parse(textBoxScore.Text);
             double grade = score / double.Parse(textBoxOverallScore.Text) * 100;
             if (grade >= 95)
@@ -151,35 +150,6 @@ namespace StudentsManagementWinForm
 
             }
 
-        }
-        //Computations menu details
-        private void computationDetailsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult dia = MessageBox.Show("Computation details:" +
-                "\nAn excellent grade means you got a 95% - 100% score." +
-                "\nA good grade means you got an 85% - 94% score." +
-                "\nA fair grade means you got a 75% - 84% score." +
-                "\nA poor grade means you got less than a 75% score." +
-                "\n\nTip: Always study smart and be a hardworking student.", "Computation Details");
-        }
-        //About menu details
-        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult dia = MessageBox.Show("Group: WannaBeTechies" +
-                "\nNames:  Laput, Alaine " +
-                "\nLawan, Alixander " +
-                "\nLibato, Kevin " +
-                "\nLlanto, Cathyrine " +
-                "\nMahinay, Angelu " +
-                "\nMatin - ao, Meinhardt Allain " +
-                "\nMembers: 6 " +
-                "\nPoint person: Lawan, Alixander", "About Us");
-        }
-
-        private void databaseManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DatabaseForm databaseForm = new DatabaseForm();
-            databaseForm.Show();
         }
     }
 }

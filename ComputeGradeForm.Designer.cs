@@ -1,7 +1,7 @@
 ﻿
 namespace StudentsManagementWinForm
 {
-    partial class Form1
+    partial class ComputeGradeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,18 +43,12 @@ namespace StudentsManagementWinForm
             this.textBoxOverallScore = new System.Windows.Forms.TextBox();
             this.buttonSubmit = new System.Windows.Forms.Button();
             this.buttonClearTextBoxes = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.computationDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.databaseManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxIDNo
             // 
             this.textBoxIDNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxIDNo.Location = new System.Drawing.Point(16, 64);
+            this.textBoxIDNo.Location = new System.Drawing.Point(130, 64);
             this.textBoxIDNo.Name = "textBoxIDNo";
             this.textBoxIDNo.Size = new System.Drawing.Size(654, 26);
             this.textBoxIDNo.TabIndex = 0;
@@ -64,7 +58,8 @@ namespace StudentsManagementWinForm
             // 
             this.labelIDNo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelIDNo.AutoSize = true;
-            this.labelIDNo.Location = new System.Drawing.Point(12, 41);
+            this.labelIDNo.ForeColor = System.Drawing.Color.Gainsboro;
+            this.labelIDNo.Location = new System.Drawing.Point(126, 41);
             this.labelIDNo.Name = "labelIDNo";
             this.labelIDNo.Size = new System.Drawing.Size(58, 20);
             this.labelIDNo.TabIndex = 1;
@@ -74,7 +69,8 @@ namespace StudentsManagementWinForm
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 155);
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(126, 155);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 20);
             this.label1.TabIndex = 3;
@@ -83,7 +79,7 @@ namespace StudentsManagementWinForm
             // textBoxFirstName
             // 
             this.textBoxFirstName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxFirstName.Location = new System.Drawing.Point(16, 178);
+            this.textBoxFirstName.Location = new System.Drawing.Point(130, 178);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(654, 26);
             this.textBoxFirstName.TabIndex = 2;
@@ -93,7 +89,8 @@ namespace StudentsManagementWinForm
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 99);
+            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.Location = new System.Drawing.Point(126, 99);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 20);
             this.label2.TabIndex = 5;
@@ -102,7 +99,7 @@ namespace StudentsManagementWinForm
             // textBoxLastName
             // 
             this.textBoxLastName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxLastName.Location = new System.Drawing.Point(16, 122);
+            this.textBoxLastName.Location = new System.Drawing.Point(130, 122);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(654, 26);
             this.textBoxLastName.TabIndex = 4;
@@ -112,7 +109,8 @@ namespace StudentsManagementWinForm
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 210);
+            this.label3.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label3.Location = new System.Drawing.Point(126, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 7;
@@ -121,7 +119,7 @@ namespace StudentsManagementWinForm
             // textBoxCourse
             // 
             this.textBoxCourse.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxCourse.Location = new System.Drawing.Point(16, 233);
+            this.textBoxCourse.Location = new System.Drawing.Point(130, 233);
             this.textBoxCourse.Name = "textBoxCourse";
             this.textBoxCourse.Size = new System.Drawing.Size(654, 26);
             this.textBoxCourse.TabIndex = 6;
@@ -131,7 +129,8 @@ namespace StudentsManagementWinForm
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 266);
+            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.Location = new System.Drawing.Point(126, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 9;
@@ -140,7 +139,7 @@ namespace StudentsManagementWinForm
             // textBoxScore
             // 
             this.textBoxScore.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxScore.Location = new System.Drawing.Point(16, 289);
+            this.textBoxScore.Location = new System.Drawing.Point(130, 289);
             this.textBoxScore.Name = "textBoxScore";
             this.textBoxScore.Size = new System.Drawing.Size(654, 26);
             this.textBoxScore.TabIndex = 8;
@@ -150,7 +149,8 @@ namespace StudentsManagementWinForm
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 327);
+            this.label5.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label5.Location = new System.Drawing.Point(126, 327);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 11;
@@ -159,7 +159,7 @@ namespace StudentsManagementWinForm
             // textBoxOverallScore
             // 
             this.textBoxOverallScore.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBoxOverallScore.Location = new System.Drawing.Point(16, 350);
+            this.textBoxOverallScore.Location = new System.Drawing.Point(130, 350);
             this.textBoxOverallScore.Name = "textBoxOverallScore";
             this.textBoxOverallScore.Size = new System.Drawing.Size(654, 26);
             this.textBoxOverallScore.TabIndex = 10;
@@ -168,7 +168,9 @@ namespace StudentsManagementWinForm
             // buttonSubmit
             // 
             this.buttonSubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonSubmit.Location = new System.Drawing.Point(364, 382);
+            this.buttonSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSubmit.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonSubmit.Location = new System.Drawing.Point(478, 394);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(180, 50);
             this.buttonSubmit.TabIndex = 12;
@@ -179,7 +181,9 @@ namespace StudentsManagementWinForm
             // buttonClearTextBoxes
             // 
             this.buttonClearTextBoxes.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonClearTextBoxes.Location = new System.Drawing.Point(178, 382);
+            this.buttonClearTextBoxes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearTextBoxes.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonClearTextBoxes.Location = new System.Drawing.Point(292, 394);
             this.buttonClearTextBoxes.Name = "buttonClearTextBoxes";
             this.buttonClearTextBoxes.Size = new System.Drawing.Size(180, 50);
             this.buttonClearTextBoxes.TabIndex = 13;
@@ -187,54 +191,12 @@ namespace StudentsManagementWinForm
             this.buttonClearTextBoxes.UseVisualStyleBackColor = true;
             this.buttonClearTextBoxes.Click += new System.EventHandler(this.buttonClearTextBoxes_Click);
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
-            this.databaseManagementToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(678, 33);
-            this.menuStrip1.TabIndex = 14;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // menuToolStripMenuItem
-            // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.computationDetailsToolStripMenuItem,
-            this.aboutUsToolStripMenuItem});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // computationDetailsToolStripMenuItem
-            // 
-            this.computationDetailsToolStripMenuItem.Name = "computationDetailsToolStripMenuItem";
-            this.computationDetailsToolStripMenuItem.Size = new System.Drawing.Size(277, 34);
-            this.computationDetailsToolStripMenuItem.Text = "Computation Details";
-            this.computationDetailsToolStripMenuItem.Click += new System.EventHandler(this.computationDetailsToolStripMenuItem_Click);
-            // 
-            // aboutUsToolStripMenuItem
-            // 
-            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(277, 34);
-            this.aboutUsToolStripMenuItem.Text = "About us";
-            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
-            // 
-            // databaseManagementToolStripMenuItem
-            // 
-            this.databaseManagementToolStripMenuItem.Name = "databaseManagementToolStripMenuItem";
-            this.databaseManagementToolStripMenuItem.Size = new System.Drawing.Size(212, 29);
-            this.databaseManagementToolStripMenuItem.Text = "Database Management";
-            this.databaseManagementToolStripMenuItem.Click += new System.EventHandler(this.databaseManagementToolStripMenuItem_Click);
-            // 
-            // Form1
+            // ComputeGradeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(678, 444);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.ClientSize = new System.Drawing.Size(906, 588);
             this.Controls.Add(this.buttonClearTextBoxes);
             this.Controls.Add(this.buttonSubmit);
             this.Controls.Add(this.label5);
@@ -249,13 +211,8 @@ namespace StudentsManagementWinForm
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.labelIDNo);
             this.Controls.Add(this.textBoxIDNo);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(700, 500);
-            this.Name = "Form1";
+            this.Name = "ComputeGradeForm";
             this.Text = "ComputingGradesForm";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,11 +234,6 @@ namespace StudentsManagementWinForm
         private System.Windows.Forms.TextBox textBoxOverallScore;
         private System.Windows.Forms.Button buttonSubmit;
         private System.Windows.Forms.Button buttonClearTextBoxes;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem computationDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem databaseManagementToolStripMenuItem;
     }
 }
 

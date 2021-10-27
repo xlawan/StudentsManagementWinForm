@@ -24,37 +24,7 @@ namespace StudentsManagementWinForm
             viewData();
         }
 
-        //Button to View Data in the Database
-        private void button1_Click(object sender, EventArgs e)
-        {
-            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            con.Open();
-            cmd = new SqlCommand("Select * from Students");
-            cmd.Connection = con;
-            da = new SqlDataAdapter(cmd);
-            ds = new DataSet();
-            da.Fill(ds, "Students");
-            dataGridView1.DataSource = ds.Tables[0];
-            con.Close();
-        }
-        //Button to insert data in the Database
-        private void button2_Click(object sender, EventArgs e)
-        {
-            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            con.Open();
-            cmd = new SqlCommand("Insert Into Students values (@IdNo,@LastName,@FirstName,@Course,@Score,@OverallScore)");
-            cmd.Connection = con;
-            cmd.Parameters.AddWithValue("@IdNo", textBoxIDNo.Text);
-            cmd.Parameters.AddWithValue("@Lastname", textBoxLastName.Text);
-            cmd.Parameters.AddWithValue("@FirstName", textBoxFirstName.Text);
-            cmd.Parameters.AddWithValue("@Course", textBoxCourse.Text);
-            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
-            cmd.Parameters.AddWithValue("@OverallScore", textBoxOverallScore.Text);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            viewData();
-
-        }
+        
         //method to display automatically the recent changes in the Database
         void viewData()
         {
@@ -134,5 +104,22 @@ namespace StudentsManagementWinForm
         {
 
         }
+        //Button to insert data in the Database
+        private void buttonInsertData_Click(object sender, EventArgs e)
+        {
+            con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            con.Open();
+            cmd = new SqlCommand("Insert Into Students values (@IdNo,@LastName,@FirstName,@Course,@Score,@OverallScore)");
+            cmd.Connection = con;
+            cmd.Parameters.AddWithValue("@IdNo", textBoxIDNo.Text);
+            cmd.Parameters.AddWithValue("@Lastname", textBoxLastName.Text);
+            cmd.Parameters.AddWithValue("@FirstName", textBoxFirstName.Text);
+            cmd.Parameters.AddWithValue("@Course", textBoxCourse.Text);
+            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+            cmd.Parameters.AddWithValue("@OverallScore", textBoxOverallScore.Text);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            viewData();
+        }        
     }
 }
