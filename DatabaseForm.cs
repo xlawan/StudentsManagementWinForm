@@ -127,6 +127,24 @@ namespace StudentsManagementWinForm
             cmd.ExecuteNonQuery();
             con.Close();
             viewData();
-        }        
+        }
+
+        private void buttonUpdateData_Click(object sender, EventArgs e)
+        {
+           // con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True");
+            con.Open();
+            cmd = new SqlCommand("UPDATE Students SET IdNO = @IdNo, LastName = @LastName, FirstName = @FirstName, Course = @Course, Score = @Score, OverallScore = @OverallScore WHERE IdNo = @IdNo", con);
+            cmd.Parameters.AddWithValue("@IdNo", textBoxIDNo.Text);
+            cmd.Parameters.AddWithValue("@Lastname", textBoxLastName.Text);
+            cmd.Parameters.AddWithValue("@FirstName", textBoxFirstName.Text);
+            cmd.Parameters.AddWithValue("@Course", textBoxCourse.Text);
+            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+            cmd.Parameters.AddWithValue("@OverallScore", textBoxOverallScore.Text);
+            cmd.ExecuteNonQuery();
+            
+            con.Close();
+            MessageBox.Show("Update");
+            viewData();
+        }
     }
 }
