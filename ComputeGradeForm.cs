@@ -23,6 +23,7 @@ namespace StudentsManagementWinForm
         public string remark;
 
         // submit button
+        #region SubmitButton
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
             // computation starts here
@@ -58,8 +59,10 @@ namespace StudentsManagementWinForm
 
             // used the public remark to show remark string in messagebox
         }
+        #endregion
 
         // this method will clear all inputted characted in the textboxes.
+        #region ClearTextBoxes
         private void ClearTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -78,13 +81,20 @@ namespace StudentsManagementWinForm
 
 
         }
+        #endregion
+
+
         // Clear button
+        #region ClearButton
         private void buttonClearTextBoxes_Click(object sender, EventArgs e)
         {
             ClearTextBoxes();
         }
+        #endregion
+
 
         // error prompt for ID No. textbox when using letters
+        #region ErrorPrompt
         private void textBoxIDNo_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -151,5 +161,6 @@ namespace StudentsManagementWinForm
             }
 
         }
+        #endregion
     }
 }
