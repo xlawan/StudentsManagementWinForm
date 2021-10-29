@@ -25,7 +25,8 @@ namespace StudentsManagementWinForm
         }
 
 
-        //method to display automatically the recent changes in the Database
+       
+        #region Method to Display Recent Changes in Database
         //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True
         void viewData()
         {
@@ -40,7 +41,10 @@ namespace StudentsManagementWinForm
             dataGridView1.DataSource = ds.Tables[0];
             con.Close();
         }
-        //textbox for searching data from the database
+        #endregion
+
+        
+        #region Search Data From Database
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
             //conditional statement to select IdNo to be searched
@@ -105,12 +109,13 @@ namespace StudentsManagementWinForm
 
             }
         }
+        #endregion
 
         private void DatabaseForm_Load(object sender, EventArgs e)
         {
 
         }
-        //Button to insert data in the Database
+        #region Insert Data from Database
         private void buttonInsertData_Click(object sender, EventArgs e)
         {
             con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentsDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -128,6 +133,10 @@ namespace StudentsManagementWinForm
             con.Close();
             viewData();
         }
+        #endregion
+
+        
+        #region Delete
         //delete and update ni bro ako nalang ge apil ang update 
         private void Delete_Click(object sender, EventArgs e)
         {
@@ -141,6 +150,9 @@ namespace StudentsManagementWinForm
             MessageBox.Show("Deleted");
 
         }
+        #endregion
+
+        #region Update
         private void Update_Click(object sender, EventArgs e)
         {
             con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
@@ -158,5 +170,6 @@ namespace StudentsManagementWinForm
             MessageBox.Show("Successfully Updated");
 
         }
+        #endregion
     }
 }
