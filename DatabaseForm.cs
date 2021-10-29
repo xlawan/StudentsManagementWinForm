@@ -146,6 +146,12 @@ namespace StudentsManagementWinForm
             con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StudentDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             con.Open();
             cmd = new SqlCommand("Update students set LastName = '" + textBoxLastName.Text + "', FirstName = '"+ textBoxFirstName.Text +"', Course = '"+ textBoxCourse.Text + "', Score = '" + textBoxScore.Text + "', OverallScore = '" + textBoxOverallScore.Text + "' where IdNo = '" + textBoxIDNo.Text + "'", con);
+            cmd.Parameters.AddWithValue("@IdNo", textBoxIDNo.Text);
+            cmd.Parameters.AddWithValue("@Lastname", textBoxLastName.Text);
+            cmd.Parameters.AddWithValue("@FirstName", textBoxFirstName.Text);
+            cmd.Parameters.AddWithValue("@Course", textBoxCourse.Text);
+            cmd.Parameters.AddWithValue("@Score", textBoxScore.Text);
+            cmd.Parameters.AddWithValue("@OverallScore", textBoxOverallScore.Text);
             cmd.ExecuteNonQuery();
             con.Close();
             viewData();
