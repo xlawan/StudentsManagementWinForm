@@ -33,13 +33,14 @@ namespace StudentsManagementWinForm
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonAboutUs = new System.Windows.Forms.Button();
             this.buttonComputationDetails = new System.Windows.Forms.Button();
-            this.buttonCheckDatabase = new System.Windows.Forms.Button();
+            this.buttonStudentEntry = new System.Windows.Forms.Button();
             this.buttonComputeGrades = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,10 +52,11 @@ namespace StudentsManagementWinForm
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.panelSideMenu.Controls.Add(this.buttonExit);
             this.panelSideMenu.Controls.Add(this.buttonHome);
             this.panelSideMenu.Controls.Add(this.buttonAboutUs);
             this.panelSideMenu.Controls.Add(this.buttonComputationDetails);
-            this.panelSideMenu.Controls.Add(this.buttonCheckDatabase);
+            this.panelSideMenu.Controls.Add(this.buttonStudentEntry);
             this.panelSideMenu.Controls.Add(this.buttonComputeGrades);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -65,12 +67,11 @@ namespace StudentsManagementWinForm
             // 
             // buttonHome
             // 
-            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonHome.FlatAppearance.BorderSize = 0;
             this.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonHome.Location = new System.Drawing.Point(0, 280);
+            this.buttonHome.Location = new System.Drawing.Point(0, 100);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonHome.Size = new System.Drawing.Size(250, 45);
@@ -82,12 +83,11 @@ namespace StudentsManagementWinForm
             // 
             // buttonAboutUs
             // 
-            this.buttonAboutUs.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonAboutUs.FlatAppearance.BorderSize = 0;
             this.buttonAboutUs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonAboutUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAboutUs.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonAboutUs.Location = new System.Drawing.Point(0, 235);
+            this.buttonAboutUs.Location = new System.Drawing.Point(0, 276);
             this.buttonAboutUs.Name = "buttonAboutUs";
             this.buttonAboutUs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonAboutUs.Size = new System.Drawing.Size(250, 45);
@@ -99,12 +99,11 @@ namespace StudentsManagementWinForm
             // 
             // buttonComputationDetails
             // 
-            this.buttonComputationDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonComputationDetails.FlatAppearance.BorderSize = 0;
             this.buttonComputationDetails.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonComputationDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComputationDetails.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonComputationDetails.Location = new System.Drawing.Point(0, 190);
+            this.buttonComputationDetails.Location = new System.Drawing.Point(0, 231);
             this.buttonComputationDetails.Name = "buttonComputationDetails";
             this.buttonComputationDetails.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonComputationDetails.Size = new System.Drawing.Size(250, 45);
@@ -114,31 +113,29 @@ namespace StudentsManagementWinForm
             this.buttonComputationDetails.UseVisualStyleBackColor = true;
             this.buttonComputationDetails.Click += new System.EventHandler(this.buttonComputationDetails_Click);
             // 
-            // buttonCheckDatabase
+            // buttonStudentEntry
             // 
-            this.buttonCheckDatabase.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonCheckDatabase.FlatAppearance.BorderSize = 0;
-            this.buttonCheckDatabase.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.buttonCheckDatabase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCheckDatabase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonCheckDatabase.Location = new System.Drawing.Point(0, 145);
-            this.buttonCheckDatabase.Name = "buttonCheckDatabase";
-            this.buttonCheckDatabase.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonCheckDatabase.Size = new System.Drawing.Size(250, 45);
-            this.buttonCheckDatabase.TabIndex = 3;
-            this.buttonCheckDatabase.Text = "Check Database";
-            this.buttonCheckDatabase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCheckDatabase.UseVisualStyleBackColor = true;
-            this.buttonCheckDatabase.Click += new System.EventHandler(this.buttonCheckDatabase_Click);
+            this.buttonStudentEntry.FlatAppearance.BorderSize = 0;
+            this.buttonStudentEntry.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonStudentEntry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonStudentEntry.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonStudentEntry.Location = new System.Drawing.Point(0, 186);
+            this.buttonStudentEntry.Name = "buttonStudentEntry";
+            this.buttonStudentEntry.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonStudentEntry.Size = new System.Drawing.Size(250, 45);
+            this.buttonStudentEntry.TabIndex = 3;
+            this.buttonStudentEntry.Text = "Student Entry";
+            this.buttonStudentEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonStudentEntry.UseVisualStyleBackColor = true;
+            this.buttonStudentEntry.Click += new System.EventHandler(this.buttonCheckDatabase_Click);
             // 
             // buttonComputeGrades
             // 
-            this.buttonComputeGrades.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonComputeGrades.FlatAppearance.BorderSize = 0;
             this.buttonComputeGrades.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonComputeGrades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonComputeGrades.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonComputeGrades.Location = new System.Drawing.Point(0, 100);
+            this.buttonComputeGrades.Location = new System.Drawing.Point(0, 141);
             this.buttonComputeGrades.Name = "buttonComputeGrades";
             this.buttonComputeGrades.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.buttonComputeGrades.Size = new System.Drawing.Size(250, 45);
@@ -203,6 +200,22 @@ namespace StudentsManagementWinForm
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // buttonExit
+            // 
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonExit.Location = new System.Drawing.Point(0, 599);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonExit.Size = new System.Drawing.Size(250, 45);
+            this.buttonExit.TabIndex = 6;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonExit.UseVisualStyleBackColor = true;
+            // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -227,7 +240,6 @@ namespace StudentsManagementWinForm
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button buttonComputeGrades;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button buttonCheckDatabase;
         private System.Windows.Forms.Button buttonAboutUs;
         private System.Windows.Forms.Button buttonComputationDetails;
         private System.Windows.Forms.Panel panelChildForm;
@@ -235,5 +247,7 @@ namespace StudentsManagementWinForm
         private System.Windows.Forms.Button buttonHome;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonStudentEntry;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
