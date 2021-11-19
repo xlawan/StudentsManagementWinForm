@@ -59,5 +59,10 @@ namespace StudentsManagementWinForm
         {
             openChildForm(new AboutUsForm());
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
