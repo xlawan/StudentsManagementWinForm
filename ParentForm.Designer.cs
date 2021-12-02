@@ -53,8 +53,8 @@ namespace StudentsManagementWinForm
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panelSideMenu.Controls.Add(this.buttonExit);
             this.panelSideMenu.Controls.Add(this.buttonHome);
+            this.panelSideMenu.Controls.Add(this.buttonExit);
             this.panelSideMenu.Controls.Add(this.buttonAboutUs);
             this.panelSideMenu.Controls.Add(this.buttonComputationDetails);
             this.panelSideMenu.Controls.Add(this.buttonStudentEntry);
@@ -70,7 +70,7 @@ namespace StudentsManagementWinForm
             // buttonExit
             // 
             this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonExit.BackColor = System.Drawing.Color.Red;
+            this.buttonExit.BackColor = System.Drawing.Color.Black;
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -101,7 +101,7 @@ namespace StudentsManagementWinForm
             this.buttonHome.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.buttonHome.Size = new System.Drawing.Size(222, 36);
             this.buttonHome.TabIndex = 1;
-            this.buttonHome.Text = "     Home";
+            this.buttonHome.Text = "        Home";
             this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonHome.UseVisualStyleBackColor = true;
             this.buttonHome.Click += new System.EventHandler(this.buttonHome_Click);
@@ -115,13 +115,13 @@ namespace StudentsManagementWinForm
             this.buttonAboutUs.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonAboutUs.Image = ((System.Drawing.Image)(resources.GetObject("buttonAboutUs.Image")));
             this.buttonAboutUs.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonAboutUs.Location = new System.Drawing.Point(0, 214);
+            this.buttonAboutUs.Location = new System.Drawing.Point(0, 234);
             this.buttonAboutUs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAboutUs.Name = "buttonAboutUs";
             this.buttonAboutUs.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.buttonAboutUs.Size = new System.Drawing.Size(222, 36);
             this.buttonAboutUs.TabIndex = 5;
-            this.buttonAboutUs.Text = "      About Us";
+            this.buttonAboutUs.Text = "        About Us";
             this.buttonAboutUs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAboutUs.UseVisualStyleBackColor = true;
             this.buttonAboutUs.Click += new System.EventHandler(this.buttonAboutUs_Click);
@@ -135,13 +135,13 @@ namespace StudentsManagementWinForm
             this.buttonComputationDetails.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonComputationDetails.Image = ((System.Drawing.Image)(resources.GetObject("buttonComputationDetails.Image")));
             this.buttonComputationDetails.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonComputationDetails.Location = new System.Drawing.Point(0, 185);
+            this.buttonComputationDetails.Location = new System.Drawing.Point(0, 203);
             this.buttonComputationDetails.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonComputationDetails.Name = "buttonComputationDetails";
             this.buttonComputationDetails.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.buttonComputationDetails.Size = new System.Drawing.Size(222, 36);
             this.buttonComputationDetails.TabIndex = 4;
-            this.buttonComputationDetails.Text = "       Computation Details";
+            this.buttonComputationDetails.Text = "         Computation Details";
             this.buttonComputationDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonComputationDetails.UseVisualStyleBackColor = true;
             this.buttonComputationDetails.Click += new System.EventHandler(this.buttonComputationDetails_Click);
@@ -155,13 +155,13 @@ namespace StudentsManagementWinForm
             this.buttonStudentEntry.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonStudentEntry.Image = ((System.Drawing.Image)(resources.GetObject("buttonStudentEntry.Image")));
             this.buttonStudentEntry.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonStudentEntry.Location = new System.Drawing.Point(0, 149);
+            this.buttonStudentEntry.Location = new System.Drawing.Point(0, 163);
             this.buttonStudentEntry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStudentEntry.Name = "buttonStudentEntry";
             this.buttonStudentEntry.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.buttonStudentEntry.Size = new System.Drawing.Size(222, 36);
             this.buttonStudentEntry.TabIndex = 3;
-            this.buttonStudentEntry.Text = "      Student Entry";
+            this.buttonStudentEntry.Text = "        Student Entry";
             this.buttonStudentEntry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonStudentEntry.UseVisualStyleBackColor = true;
             this.buttonStudentEntry.Click += new System.EventHandler(this.buttonCheckDatabase_Click);
@@ -175,13 +175,13 @@ namespace StudentsManagementWinForm
             this.buttonComputeGrades.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonComputeGrades.Image = ((System.Drawing.Image)(resources.GetObject("buttonComputeGrades.Image")));
             this.buttonComputeGrades.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonComputeGrades.Location = new System.Drawing.Point(0, 113);
+            this.buttonComputeGrades.Location = new System.Drawing.Point(0, 124);
             this.buttonComputeGrades.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonComputeGrades.Name = "buttonComputeGrades";
             this.buttonComputeGrades.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.buttonComputeGrades.Size = new System.Drawing.Size(222, 36);
             this.buttonComputeGrades.TabIndex = 2;
-            this.buttonComputeGrades.Text = "      Compute Grades";
+            this.buttonComputeGrades.Text = "        Compute Grades";
             this.buttonComputeGrades.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonComputeGrades.UseVisualStyleBackColor = true;
             this.buttonComputeGrades.Click += new System.EventHandler(this.buttonComputeGrades_Click);
